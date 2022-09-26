@@ -226,10 +226,10 @@ func Input(DisplayText string) string {
 	}
 	reader := bufio.NewReader(os.Stdin)
 	if user.Name == "" {
-		user.Name = "Raider"
+		user.Name = "revlimid"
 	}
 	if DisplayText == "" {
-		fmt.Printf("%s@DiscSpam > ", user.Name)
+		fmt.Printf("%s@treatment > ", user.Name)
 	} else {
 		fmt.Printf("%s > ", DisplayText)
 	}
@@ -246,8 +246,8 @@ func Help() {
 	if constants.Proxy {
 		fmt.Printf("%d Proxies Loaded\n", len(constants.Proxies))
 	}
-	fmt.Printf("GNAA Softworks LLC\n")
-	fmt.Printf("Last Measure II | Written by Trollface Security in collaboration with the GNAA\n")
+	fmt.Printf("Trollface Softworks LLC @ https://trollsec.cf \n")
+	fmt.Printf("Revlimid: We cure Discordian Cancer | Written by Trollface Security in collaboration with the GNAA\n")
 	fmt.Printf("%d Tokens Loaded, enjoy my fellow gaynigger\n", len(constants.Tokens))
 	fmt.Printf("%s %s\n", constants.White("1. join server - params:"), constants.Green("<Invite Code>"))
 	fmt.Printf("%s %s\n", constants.White("2. leave server - params:"), constants.Green("<Server ID>"))
